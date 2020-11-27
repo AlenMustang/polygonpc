@@ -1,0 +1,160 @@
+.navbar {
+  background-color: rgba(29, 29, 29, 90%);
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+.meni-login {
+  display: block;
+  position: relative;
+  top: 0;
+  right: 0;
+  transform: translate(-20%, 0%);
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+.slika {
+  content: url(./logo-web.png);
+
+  width: 30%;
+  height: 30%;
+  top: 0;
+  right: 0;
+}
+.navbar-container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 80px;
+  max-width: 100%;
+}
+
+.nav-meni {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 10px;
+  list-style: none;
+  text-align: center;
+  width: 60vw;
+  justify-content: right;
+  margin-right: 2px;
+}
+
+.nav-list {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding-left: 5px;
+  padding-right: 5px;
+  height: 100%;
+}
+
+.nav-linki:hover {
+  border-bottom: 5px solid #05999b;
+  transition: all 0.5s ease-in;
+  height: 90%;
+}
+
+.nav-linki {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem 0.5rem;
+  height: 100%;
+}
+
+.meni-ikona {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .NavbarItems {
+    position: relative;
+  }
+
+  .nav-meni {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 40vh;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 0.5;
+    transition: all 0.5s ease;
+  }
+
+  .nav-meni.active {
+    background: #1d1d1d;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  .nav-linki {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+  }
+
+  .nav-linki:hover {
+    background-color: #2d2d2d;
+    color: #fff;
+    border-radius: 0;
+  }
+
+  .meni-ikona {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #fff;
+  }
+
+  .slika {
+    content: url(./logo-web.png);
+    display: flex;
+    width: 30%;
+    height: 30%;
+    position: static;
+
+    top: 0;
+    right: 0;
+    left: 50px;
+  }
+
+  .fa-times {
+    color: #fff;
+    font-size: 2rem;
+  }
+
+  .nav-links-mobile {
+    display: block;
+    text-align: center;
+    margin: 2rem auto;
+    border-radius: 4px;
+    width: 80%;
+    text-decoration: none;
+    font-size: 1.5rem;
+    background-color: transparent;
+    color: #fff;
+    padding: 14px 20px;
+    border: 1px solid #fff;
+    transition: all 0.3s ease-out;
+  }
+}
