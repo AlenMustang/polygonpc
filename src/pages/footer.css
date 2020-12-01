@@ -1,0 +1,81 @@
+.footer-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 30vh;
+  bottom: 0;
+  justify-content: center;
+  padding: 3rem 4rem;
+  background-color: #1d1d1d;
+}
+
+.container-payment {
+  color: #fff;
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 2%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 100;
+}
+
+.card-container {
+  display: block;
+  border: #2d2d2d solid 2px;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+.social-icon {
+  font-size: 2rem;
+  padding-top: 0.1rem;
+}
+
+.card-content {
+  display: grid;
+  text-align: center;
+
+  grid-template-columns: repeat(3, auto);
+}
+.social-links {
+  text-decoration: none;
+  color: #ffff;
+}
+
+.social-links:hover {
+  color: #05999b;
+  transition: all ease-in 0.3s;
+}
+
+.services {
+  padding: 2%;
+}
+ul {
+  color: #fff;
+  list-style: none;
+  font-size: 1.4rem;
+  font-weight: 100;
+  border: #2d2d2d solid 2px;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+.footer-list {
+  color: #fff;
+  font-size: 1.1rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.footer-icon {
+  color: #fff;
+}
+.footer-icon:hover {
+  color: #05999b;
+  transition: all ease-in 0.3s;
+}
