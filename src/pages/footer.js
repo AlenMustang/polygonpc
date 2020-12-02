@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"
 import "./footer.css"
 import {FaFacebook,FaDiscord, FaTwitterSquare,FaInstagramSquare,FaLinkedin,FaTwitch,FaCubes, FaCube} from "react-icons/fa"
 import {GrMail} from "react-icons/gr"
+import { Gumb } from './gumb'
 
 function Footer() {
     return (
@@ -11,10 +12,10 @@ function Footer() {
                                                                    
                         
 
-                            <div className="container-payment">
+                            <div className="container-socials">
                                 
                                 <div className="card-container">
-                                    SOCIAL LINKS
+                                    <h5>SOCIAL LINKS</h5>
                                     <div className="card-content">
                                         
                                         
@@ -48,7 +49,8 @@ function Footer() {
                     
                         
                         <div className="services">
-                            <ul> SUPPORT & SERVICES
+                            <ul> 
+                                 <h5>SUPPORT & SERVICES</h5>
                                 <li className="footer-list">
                                     <Link to="/about" className="footer-link"><FaCubes className="footer-icon"/> About</Link>
                                 </li>
@@ -64,13 +66,30 @@ function Footer() {
                                 <li className="footer-list">
                                    <Link to="/Returns" className="footer-link"><FaCubes className="footer-icon"/> Returns</Link>
                                 </li>
-                                
+                                <li className="footer-list">
+                                   <Link to="/components" className="footer-link"><FaCubes className="footer-icon"/> Products</Link>
+                                </li>
+                                <li className="footer-list">
+                                   <Link to="/Returns" className="footer-link"><FaCubes className="footer-icon"/> Returns</Link>
+                                </li>
                             </ul>
                         </div>
                        
 
                         
-                            <div className="socials-container">
+                            <div className="news-container">
+                                
+        
+                                <div className="newsletter">
+                                    <h5>NEWSLETTER</h5>
+                                    <p>Get notified about exclusives and deals</p>
+                                    <div className="input">
+                                        <input placeholder=" Enter e-mail" name="mail" className="mail"></input>
+                                        <Gumb buttonSize="gumb-majhen" buttonStyle="gumb-default">SUBSCRIBE</Gumb>
+                                    </div>
+                                    
+                                    
+                                </div>
                                 
                             </div>
 
@@ -79,6 +98,11 @@ function Footer() {
                     
                     
                 
+            </div>
+            <div className="bottom-footer">
+                <div className="links">
+                    <Link to="/privacypolicy">Privacy Policy</Link>
+                </div>
             </div>
         </div>
     )

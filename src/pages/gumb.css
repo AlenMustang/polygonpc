@@ -6,7 +6,7 @@
   cursor: pointer;
 }
 .gumb-default {
-  background-color: transparent;
+  background-color: #2d2d2d;
   color: white;
 }
 
@@ -36,7 +36,7 @@
 }
 
 .gumb-majhen {
-  font-size: 18px;
+  font-size: 16px;
   padding: 6px 18px;
 }
 

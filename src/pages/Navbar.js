@@ -4,7 +4,7 @@ import React, { useState } from "react"
  import { Link } from "react-router-dom"
 import  { FaBars, FaTimes,} from "react-icons/fa"
 import "./nav.css"
-import {FiLogIn} from "react-icons/fi"
+import {FaUser} from "react-icons/fa"
 
 
 import { Gumb } from "./gumb"
@@ -67,7 +67,7 @@ function navbar() {
                     </li>
                         
                         <Link to="/signup" className="nav-linki">
-                            {gumb && <Gumb buttonStyle="gumb-default" buttonSize="gumb-srednji"><FiLogIn className="meni-login"></FiLogIn></Gumb>}
+                            <FaUser className="meni-login"></FaUser>
                         </Link>
                     
                     </ul>
