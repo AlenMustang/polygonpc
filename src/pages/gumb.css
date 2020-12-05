@@ -24,7 +24,7 @@
   padding: 8px 5px;
   border: 4px solid #000000;
   border-radius: 2px;
-  transition: all 0.4s ;
+  transition: all 0.4s;
 }
 .gumb-srednji {
   font-size: 20px;
@@ -36,8 +36,8 @@
 }
 
 .gumb-majhen {
-  font-size: 16px;
-  padding: 6px 18px;
+  font-size: 12px;
+  padding: 4px 18px;
 }
 
 .gumb-majhen:hover,
@@ -46,4 +46,10 @@
   background-color: #05999b;
   color: #fff;
   transition: all 0.5s ease-out;
+}
+@media screen and (max-width: 960px) {
+  .gumb-velik {
+    font-size: 16px;
+    padding: 8px 18px;
+  }
 }

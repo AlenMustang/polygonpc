@@ -8,18 +8,7 @@ import 'aos/dist/aos.css'
 AOS.init();
 function Section({lightBg,lightText,lightTextDesc,headline,desc,button,headline_right,desc_right,video,showbutton}) {
         
-        const gumbVelikost =()=> {
-        if(window.innerWidth>=960)
-        {
-            gumbVelikost(false)
-        
-        }
-        else{
-            gumbVelikost(true)
-        }
-        window.addEventListener('resize',gumbVelikost);
-    }
-
+      
    
     return (
          
@@ -42,7 +31,7 @@ function Section({lightBg,lightText,lightTextDesc,headline,desc,button,headline_
                             <p className={lightTextDesc ?"text-light":"text-dark"}>{desc}</p>
                             <div className={showbutton ? "display-button" :"nobutton"}>
                             <Link to="/3d-viewer"  >
-                                <Gumb buttonSize={gumbVelikost ? "gumb-velik":"gumb-srednji"} buttonStyle={lightText ? "gumb-outline-light":"gumb-outline"} className={lightText ? "text-light": "text-dark"}> {button} </Gumb>
+                                <Gumb buttonSize="gumb-velik" buttonStyle={lightText ? "gumb-outline-light":"gumb-outline"} className={lightText ? "text-light": "text-dark"}> {button} </Gumb>
                             </Link>
                             </div>
                         </div>

@@ -1,21 +1,58 @@
 import React from 'react'
 import { Link } from "react-router-dom"
 import "./footer.css"
-import {FaFacebook,FaDiscord, FaTwitterSquare,FaInstagramSquare,FaLinkedin,FaTwitch,FaCubes, FaCube} from "react-icons/fa"
-import {GrMail} from "react-icons/gr"
+import {FaFacebook,FaDiscord, FaTwitterSquare,FaInstagramSquare,FaLinkedin,FaTwitch,FaCubes,FaRegCopyright,FaChevronRight,FaCcPaypal,FaCcVisa,FaCcMastercard,FaCcDinersClub,FaUps} from "react-icons/fa"
+import{SiAmericanexpress} from 'react-icons/si'
 import { Gumb } from './gumb'
-
+import img from './wSXkD9YD_400x400.jpg'
+import img2 from './gls_logo.png'
 function Footer() {
     return (
         <div>
             <div className="footer-container">
                                                                    
-                        
+            <div className="container-payment">
+                                
+                                <div className="card-container">
+                                   <p>PAY WITH</p> 
+                                    <div className="card-content-payment">
+                                        
+                                        
+                                        
+                                           <FaCcPaypal className="card-icon"/>
+                                          
+                                       
+                                            <FaCcVisa className="card-icon"/>
+                                       
+                                       
+                                            <FaCcMastercard className="card-icon"/>
+                                      
+                                        
+                                            <SiAmericanexpress className="card-icon"/>
+                                            
+                                            <FaCcDinersClub className="card-icon"/>
+                                        
+                                            
+                                       
+                                        
+                                        
+                                    </div>
+                                </div>
+                                <div className="card-container-shipping">
+                                    <p>SHIPPING</p>
+                                    <div className="card-content-payment-shipping">
+                                    <FaUps className="card-icon-shipping"/>
+                                    <img className="image" src={img}></img>
+                                    <img className="image" src={img2}></img>
+                                    </div>
+                                </div>
+                                
+            </div>
 
                             <div className="container-socials">
                                 
                                 <div className="card-container">
-                                    <h5>SOCIAL LINKS</h5>
+                                   <p>SOCIAL LINKS</p> 
                                     <div className="card-content">
                                         
                                         
@@ -49,8 +86,8 @@ function Footer() {
                     
                         
                         <div className="services">
-                            <ul> 
-                                 <h5>SUPPORT & SERVICES</h5>
+                            <ul className="footer-ul"> 
+                                 SUPPORT & SERVICES
                                 <li className="footer-list">
                                     <Link to="/about" className="footer-link"><FaCubes className="footer-icon"/> About</Link>
                                 </li>
@@ -81,11 +118,11 @@ function Footer() {
                                 
         
                                 <div className="newsletter">
-                                    <h5>NEWSLETTER</h5>
+                                    NEWSLETTER
                                     <p>Get notified about exclusives and deals</p>
                                     <div className="input">
                                         <input placeholder=" Enter e-mail" name="mail" className="mail"></input>
-                                        <Gumb buttonSize="gumb-majhen" buttonStyle="gumb-default">SUBSCRIBE</Gumb>
+                                        <Gumb buttonSize="gumb-srednji" buttonStyle="gumb-default">SUBSCRIBE</Gumb>
                                     </div>
                                     
                                     
@@ -93,17 +130,27 @@ function Footer() {
                                 
                             </div>
 
-                        
+              
                            
                     
                     
                 
             </div>
-            <div className="bottom-footer">
-                <div className="links">
-                    <Link to="/privacypolicy">Privacy Policy</Link>
+                <div className="bottom-footer">
+                <div className="comp-name">
+                    <FaRegCopyright></FaRegCopyright> 2020 PolygonPC - All Rights Reserved.
                 </div>
-            </div>
+                <div className="links">
+                    <FaChevronRight className="footer-icon-bot"></FaChevronRight>
+                    <Link className="link-footer" to="/privacy-policy">Privacy Policy</Link>
+                    <FaChevronRight className="footer-icon-bot"></FaChevronRight>
+                    <Link className="link-footer" to="/terms-of-sale">Terms of sale</Link>
+                    <FaChevronRight className="footer-icon-bot"></FaChevronRight>
+                    <Link className="link-footer" to="/EULA">EULA</Link>
+                    <FaChevronRight className="footer-icon-bot"></FaChevronRight>
+                    <Link className="link-footer" to="/cookie-policy">Cookie policy</Link>
+                </div>
+            </div>     
         </div>
     )
 }
