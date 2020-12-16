@@ -2,10 +2,13 @@
 
 import React, { useState } from "react"
  import { Link } from "react-router-dom"
-import  { FaBars, FaTimes,} from "react-icons/fa"
+import  { FaBars, FaTimes,FaSearch,FaHome,FaDrawPolygon} from "react-icons/fa"
+import {RiContactsLine} from "react-icons/ri"
 import "./nav.css"
+import {BiShapePolygon} from"react-icons/bi"
+import {TiHomeOutline} from "react-icons/ti"
 import {FaUser} from "react-icons/fa"
-
+import {GiCubeforce} from "react-icons/gi"
 
 import { Gumb } from "./gumb"
 
@@ -42,33 +45,40 @@ function navbar() {
                 </div>
                 <ul className={klik ? "nav-meni active":"nav-meni"}>
                     <li className="nav-list">
+                        <div className="searchBox">
+                        <button className="searchButton">
+                                 <FaSearch />
+                             </button>
+                            <input type="search" name="search" className="searchInput"></input>
+                             
+                        </div>
+                    </li>
+                    <li className="nav-list">
                         <Link to="/" className="nav-linki" onClick={zapriMobileMeni}>
-                            HOME
+                            <TiHomeOutline className="nav-icon"></TiHomeOutline>HOME
                         </Link>
                     </li>
                     
                     <li className="nav-list">
                         <Link to="/components" className="nav-linki" onClick={zapriMobileMeni}>
-                            COMPONENTS
+                            <GiCubeforce className="nav-icon"></GiCubeforce>COMPONENTS
                         </Link>
                     </li>
 
                     <li className="nav-list">
                         <Link to="/3d-viewer" className="nav-linki" onClick={zapriMobileMeni}>
-                            <p>3D CONFIGURATOR</p>
+                            <BiShapePolygon className="nav-icon"/>CONFIGURATOR
                         </Link>
                     </li>
                     
                     <li className="nav-list">
                         <Link to="/Contact" className="nav-linki" onClick={zapriMobileMeni}>
-                            CONTACT
+                       < RiContactsLine className="nav-icon"></RiContactsLine> CONTACT
                         </Link>
 
                     </li>
                         
-                        <Link to="/signup" className="nav-linki">
-                            <FaUser className="meni-login"></FaUser>
-                        </Link>
+                      
                     
                     </ul>
                     

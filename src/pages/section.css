@@ -134,25 +134,29 @@ video {
     color: #000;
     padding-bottom: 3vh;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 28px;
     padding-top: 6vh;
+    text-align: center;
   }
   .head-dark {
     color: #fff;
     padding-bottom: 3vh;
-    font-size: 30px;
+    font-size: 28px;
     padding-top: 6vh;
+    text-align: center;
   }
 
   .text-light {
     color: #000;
     padding-bottom: 3vh;
-    font-size: 18px;
+    font-size: 16px;
+    text-align: center;
   }
 
   .text-dark {
     color: #fff;
     padding-bottom: 3vh;
-    font-size: 18px;
+    font-size: 16px;
+    text-align: center;
   }
 } ;

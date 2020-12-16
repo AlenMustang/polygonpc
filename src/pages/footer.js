@@ -52,7 +52,7 @@ function Footer() {
                             <div className="container-socials">
                                 
                                 <div className="card-container">
-                                   <p>SOCIAL LINKS</p> 
+                                   <p>SOCIALS</p> 
                                     <div className="card-content">
                                         
                                         
@@ -87,7 +87,7 @@ function Footer() {
                         
                         <div className="services">
                             <ul className="footer-ul"> 
-                                 SUPPORT & SERVICES
+                                 <p>SUPPORT & SERVICES</p>
                                 <li className="footer-list">
                                     <Link to="/about" className="footer-link"><FaCubes className="footer-icon"/> About</Link>
                                 </li>
