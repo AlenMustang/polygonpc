@@ -2,11 +2,15 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Gumb } from './gumb'
 import "./section.css"
+import  Karta  from './karta'
+import {karta1,karta2,karta3} from './datakarta'
 import blue from "./blue.mp4"
 import AOS from 'aos';
 import 'aos/dist/aos.css'
+
+
 AOS.init();
-function Section({lightBg,lightText,lightTextDesc,headline,desc,button,headline_right,desc_right,video,showbutton}) {
+function Section({lightBg,lightText,lightTextDesc,headline,desc,button,headline_right,desc_right,video,showbutton,karteLeva,karteDesna}) {
         
       
    
@@ -18,8 +22,9 @@ function Section({lightBg,lightText,lightTextDesc,headline,desc,button,headline_
                  <video src={blue} autoPlay muted loop type="video/mp4"> </video>
                 </div>
             <div className={lightBg ? "container-slant-light" : "container-slant-dark"}>
-            
-            
+              
+             
+             
              <div className="container-left">
                 
                     <div className="container-content">
@@ -33,6 +38,14 @@ function Section({lightBg,lightText,lightTextDesc,headline,desc,button,headline_
                             <Link to="/3d-viewer"  >
                                 <Gumb buttonSize="gumb-velik" buttonStyle={lightText ? "gumb-outline-light":"gumb-outline"} className={lightText ? "text-light": "text-dark"}> {button} </Gumb>
                             </Link>
+                            </div>
+                            <div className={karteLeva ? "card-container-display" : "card-container-hide" }>
+                            
+                                <Karta {...karta1}/>
+                                
+
+
+
                             </div>
                         </div>
 
@@ -50,7 +63,14 @@ function Section({lightBg,lightText,lightTextDesc,headline,desc,button,headline_
 
                             <h1 className={lightText ? "head" : "head-dark"}>{headline_right}</h1>
                             <p className={lightTextDesc ?"text-light":"text-dark"}>{desc_right}</p>
-                           
+                            <div className={karteDesna ? "card-container-display" : "card-container-hide" }>
+
+                            <Karta {...karta1}/>
+                            <Karta {...karta2}/>
+                            <Karta {...karta3}/>
+                    
+
+                        </div>    
                             
                         </div>
 

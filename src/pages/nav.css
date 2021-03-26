@@ -1,16 +1,20 @@
 .navbar {
-  background-color: rgba(29, 29, 29, 90%);
-  height: 80px;
-  display: flex;
+  background-color: #ffff;
+  height: 70px;
   justify-content: center;
-  align-items: center;
   font-size: 1.2rem;
-  position: fixed;
+  position: absolute;
   top: 0;
+  width: 100%;
+  display: flex;
   box-shadow: rgba(0, 0, 0, 50%) 6px 6px 6px 6px;
   z-index: 999;
 }
+.navbar-container {
+  display: flex;
 
+  float: left;
+}
 .meni-login {
   display: block;
   position: relative;
@@ -27,35 +31,28 @@
 .nobutton {
   display: none;
 }
-.slika {
-  content: url(./logo-web.png);
 
-  width: 30%;
-  height: 30%;
-  top: 0;
-  right: 0;
+.navbar-logo {
+  color: #2d2d2d;
+  text-decoration: none;
+  padding: 20px;
+  font-size: 1.4rem;
+  font-weight: bold;
 }
+
 .searchBox {
   display: flex;
   flex-direction: row;
 }
 
-.navbar-container {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  height: 80px;
-  max-width: 100%;
-}
-
 .searchBox:hover > .searchInput {
-  width: 120px;
+  width: 150px;
   padding: 2px 6px;
 }
 .searchBox {
   position: relative;
 
-  background: #2d2d2d;
+  background: #3d3d3d;
   height: 40px;
   border-radius: 40px;
 }
@@ -68,12 +65,12 @@
   font-size: 1.4rem;
 }
 .searchButton {
-  color: white;
+  color: black;
 
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: #2d2d2d;
+  background: white;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -97,10 +94,10 @@
 .nav-meni {
   display: grid;
   grid-template-columns: repeat(6, auto);
-
+  float: right;
   list-style: none;
   text-align: center;
-  width: 60vw;
+  padding-right: 2rem;
 }
 
 .nav-list {
@@ -116,11 +113,12 @@
 .nav-linki:hover {
   border-bottom: 5px solid #05999b;
   transition: all 0.5s ease-in;
-  height: 90%;
+  height: 100%;
+  background-color: #9d9d9d;
 }
 
 .nav-linki {
-  color: #fff;
+  color: black;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -141,18 +139,19 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 40vh;
+
     position: absolute;
-    top: 80px;
-    left: -100%;
+    top: 70px;
+    right: -100%;
     opacity: 0.5;
-    transition: all 0.5s ease;
+    transition: all 0.5s ease in;
   }
 
   .nav-meni.active {
     background: #1d1d1d;
-    left: 0;
+    right: 0;
     opacity: 1;
+    color: white;
     transition: all 0.5s ease;
     z-index: 1;
   }
@@ -162,10 +161,11 @@
     padding: 2rem;
     width: 100%;
     display: table;
+    color: white;
   }
 
   .nav-linki:hover {
-    background-color: #2d2d2d;
+    background-color: transparent;
     color: #fff;
     border-radius: 0;
   }
@@ -178,19 +178,7 @@
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
-    color: #fff;
-  }
-
-  .slika {
-    content: url(./logo-web.png);
-    display: flex;
-    width: 30%;
-    height: 30%;
-    position: static;
-
-    top: 0;
-    right: 0;
-    left: 50px;
+    color: black;
   }
 
   .fa-times {
@@ -198,18 +186,12 @@
     font-size: 2rem;
   }
 
-  .nav-links-mobile {
-    display: block;
-    text-align: center;
-    margin: 2rem auto;
-    border-radius: 4px;
-    width: 80%;
-    text-decoration: none;
-    font-size: 1.5rem;
-    background-color: transparent;
-    color: #fff;
-    padding: 14px 20px;
-    border: 1px solid #fff;
-    transition: all 0.3s ease-out;
+  .searchBox:hover > .searchInput {
+    width: 300px;
+    padding: 2px 6px;
+  }
+  .searchBox {
+    display: flex;
+    flex-direction: row;
   }
 }

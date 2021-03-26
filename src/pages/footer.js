@@ -11,7 +11,7 @@ function Footer() {
         <div>
             <div className="footer-container">
                                                                    
-            <div className="container-payment">
+            
                                 
                                 <div className="card-container">
                                    <p>PAY WITH</p> 
@@ -39,7 +39,7 @@ function Footer() {
                                     </div>
                                 </div>
                                 <div className="card-container-shipping">
-                                    <p>SHIPPING</p>
+                                    <p>DOSTAVA</p>
                                     <div className="card-content-payment-shipping">
                                     <FaUps className="card-icon-shipping"/>
                                     <img className="image" src={img}></img>
@@ -47,12 +47,12 @@ function Footer() {
                                     </div>
                                 </div>
                                 
-            </div>
+            
 
                             <div className="container-socials">
                                 
                                 <div className="card-container">
-                                   <p>SOCIALS</p> 
+                                   <p>SOCIALNI MEDIJI</p> 
                                     <div className="card-content">
                                         
                                         
@@ -86,10 +86,13 @@ function Footer() {
                     
                         
                         <div className="services">
+                        <p>PODPORA IN STORITVE</p>
+                            <div className="support-services">
+                            
                             <ul className="footer-ul"> 
-                                 <p>SUPPORT & SERVICES</p>
+                                 
                                 <li className="footer-list">
-                                    <Link to="/about" className="footer-link"><FaCubes className="footer-icon"/> About</Link>
+                                    <Link to="/about" className="footer-link"><FaCubes className="footer-icon"/> O nas</Link>
                                 </li>
 
                                 <li className="footer-list">
@@ -97,19 +100,21 @@ function Footer() {
                                 </li>
 
                                 <li className="footer-list">
-                                   <Link to="/support" className="footer-link"><FaCubes className="footer-icon"/> Customer Support</Link>
-                                </li>
-
-                                <li className="footer-list">
-                                   <Link to="/Returns" className="footer-link"><FaCubes className="footer-icon"/> Returns</Link>
-                                </li>
-                                <li className="footer-list">
-                                   <Link to="/components" className="footer-link"><FaCubes className="footer-icon"/> Products</Link>
-                                </li>
-                                <li className="footer-list">
-                                   <Link to="/Returns" className="footer-link"><FaCubes className="footer-icon"/> Returns</Link>
+                                   <Link to="/support" className="footer-link"><FaCubes className="footer-icon"/> Podpora strankam</Link>
                                 </li>
                             </ul>
+                            <ul className="footer-ul-left">
+                                <li className="footer-list">
+                                   <Link to="/Returns" className="footer-link"><FaCubes className="footer-icon"/> Vračila</Link>
+                                </li>
+                                <li className="footer-list">
+                                   <Link to="/components" className="footer-link"><FaCubes className="footer-icon"/> Produkti</Link>
+                                </li>
+                                <li className="footer-list">
+                                   <Link to="/Returns" className="footer-link"><FaCubes className="footer-icon"/> Pogoji poslovanja</Link>
+                                </li>
+                                </ul>
+                                </div>
                         </div>
                        
 
@@ -118,8 +123,8 @@ function Footer() {
                                 
         
                                 <div className="newsletter">
-                                    NEWSLETTER
-                                    <p>Get notified about exclusives and deals</p>
+                                    NOVICE
+                                    <p>Prijavite se na novice za obvestila o <br></br>nagradnih igrah in novostih!</p>
                                     <div className="input">
                                         <input placeholder=" Enter e-mail" name="mail" className="mail"></input>
                                         <Gumb buttonSize="gumb-srednji" buttonStyle="gumb-default">SUBSCRIBE</Gumb>

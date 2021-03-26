@@ -6,7 +6,7 @@
 
   bottom: 0;
   justify-content: space-between;
-  padding: 2rem 15rem;
+  padding: 1rem 15rem;
   background-color: #2d2d2d;
 }
 
@@ -32,13 +32,25 @@
 
 .card-container {
   display: block;
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 1%;
 
-  padding: 0.4rem;
+  font-family: -ap5ple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
 }
 .card-container-shipping {
   display: block;
   color: #fff;
   padding: 0.4rem;
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 1%;
+
+  font-family: -ap5ple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
 }
 .card-container > p {
   color: #ffff;
@@ -77,15 +89,15 @@
 .card-content-payment {
   color: #fff;
   display: grid;
-  grid-template-columns: repeat(5, auto);
+  grid-template-columns: repeat(3, auto);
 
   text-align: center;
   justify-content: space-between;
 }
 .card-content-payment-shipping {
   color: #fff;
-  display: flex;
-
+  display: grid;
+  grid-template-columns: repeat(2, auto);
   text-align: center;
   justify-content: center;
 }
@@ -101,11 +113,27 @@
 
 .services {
   padding: 1%;
-}
-.footer-ul > p {
+  display: block;
   font-weight: 500;
+  color: #fff;
+  font-size: 1.4rem;
+  text-align: center;
 }
+
 .footer-ul {
+  color: #fff;
+  list-style: none;
+  font-size: 1.4rem;
+  font-weight: 100;
+
+  padding: 0.5rem;
+}
+.support-services {
+  display: flex;
+
+  text-align: left;
+}
+.footer-ul-left {
   color: #fff;
   list-style: none;
   font-size: 1.4rem;
@@ -120,6 +148,10 @@
   padding-top: 2px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.footer-link:hover {
+  transition: all 0.3s ease-in;
+  color: #05999b;
 }
 
 .footer-link {
@@ -185,7 +217,7 @@
   display: flex;
 }
 .link-footer {
-  text-decoration: none;
+  text-decoration: underline;
   color: #fff;
   font-size: 0.8rem;
   font-style: italic;

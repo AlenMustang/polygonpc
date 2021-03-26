@@ -33,17 +33,44 @@ function navbar() {
 
     return (
        <div className="navbar">
-           <div className="navbar-container container" >
-               
-                 
-                 <Link to="/" className="navbar-logo"  >
-                   <div className="slika"/>
-                 </Link>
+            
+           <div className="navbar-container " >
+                    
+                        
+           <Link to="/" className="navbar-logo">
+                            POLYGONPC
+            </Link>
                                           
                 <div className="meni-ikona"  onClick={nastaviklik} >
                     {klik ? <FaTimes/> : <FaBars/>}
                 </div>
                 <ul className={klik ? "nav-meni active":"nav-meni"}>
+                    
+                    <li className="nav-list">
+                        <Link to="/" className="nav-linki" onClick={zapriMobileMeni}>
+                            <TiHomeOutline className="nav-icon"></TiHomeOutline>DOMOV
+                        </Link>
+                    </li>
+                    
+                    <li className="nav-list">
+                        <Link to="/components" className="nav-linki" onClick={zapriMobileMeni}>
+                            <GiCubeforce className="nav-icon"></GiCubeforce>KOMPONENTE
+                        </Link>
+                    </li>
+
+                    <li className="nav-list">
+                        <Link to="/3d-viewer" className="nav-linki" onClick={zapriMobileMeni}>
+                            <BiShapePolygon className="nav-icon"/>KONFIGURATOR
+                        </Link>
+                    </li>
+                    
+                    <li className="nav-list">
+                        <Link to="/Contact" className="nav-linki" onClick={zapriMobileMeni}>
+                       < RiContactsLine className="nav-icon"></RiContactsLine> KONTAKT
+                        </Link>
+
+                    </li>
+                        
                     <li className="nav-list">
                         <div className="searchBox">
                         <button className="searchButton">
@@ -53,32 +80,6 @@ function navbar() {
                              
                         </div>
                     </li>
-                    <li className="nav-list">
-                        <Link to="/" className="nav-linki" onClick={zapriMobileMeni}>
-                            <TiHomeOutline className="nav-icon"></TiHomeOutline>HOME
-                        </Link>
-                    </li>
-                    
-                    <li className="nav-list">
-                        <Link to="/components" className="nav-linki" onClick={zapriMobileMeni}>
-                            <GiCubeforce className="nav-icon"></GiCubeforce>COMPONENTS
-                        </Link>
-                    </li>
-
-                    <li className="nav-list">
-                        <Link to="/3d-viewer" className="nav-linki" onClick={zapriMobileMeni}>
-                            <BiShapePolygon className="nav-icon"/>CONFIGURATOR
-                        </Link>
-                    </li>
-                    
-                    <li className="nav-list">
-                        <Link to="/Contact" className="nav-linki" onClick={zapriMobileMeni}>
-                       < RiContactsLine className="nav-icon"></RiContactsLine> CONTACT
-                        </Link>
-
-                    </li>
-                        
-                      
                     
                     </ul>
                     
